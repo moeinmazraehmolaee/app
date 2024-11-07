@@ -1,0 +1,299 @@
+body {
+    background-color: #fff;
+    background-color: #efefef;
+    
+  }
+  .background-image {
+    /* background-image: url("../7/img/photo_2024-05-11_23-24-09.jpg"); */
+    position: fixed; /* ثابت نگه‌داشتن تصویر */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* پوشش کامل تصویر */
+    background-position: center; /* مرکز تصویر */
+    filter: blur(12px); /* مقدار تاری */
+    z-index: -1; /* قرار دادن در زیر سایر عناصر */
+  }
+  
+  /* استایل جدید برای منو */
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: #565555; /* پس‌زمینه تیره‌تر برای زیبایی */
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin: 1em auto;
+    max-width: 400px; /* حداکثر عرض */
+  }
+  
+  /* استایل آیتم‌های منو */
+  .menu-item {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    color: #5454bd; /* تغییر رنگ هنگام هاور */
+    transform: scale(1.1); /* بزرگ‌تر شدن آیتم در هاور */
+  }
+  
+  .header {
+    /* background-color: #efefef; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  .header-box {
+    background-color: #9e9e9e;
+    background-color: #8f8b8b00;
+    margin: 20px 1em 1.2em 1em;
+    padding: 14px 29px;
+    border-radius: 7px;
+    border: 2px solid #000;
+  }
+  .header-name {
+  }
+  .header-img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  .header-name-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .header-name-des {
+    font-size: 22px;
+    color: #414141;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .contant {
+    margin-top: 30px;
+  }
+  .contant-wraper {
+    background-color: #efefef;
+    background-color: #fff;
+    margin: 20px 1em 1.2em 1em;
+  
+    padding: 14px 29px;
+    border-radius: 12px;
+    transition: all 0.3s linear;
+    opacity: 0.75;
+  }
+  
+  .contant-wraper:hover {
+    transform: scale(1.041);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .contant-wraper-title {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  .contant-wraper-des {
+    font-size: 1.2em;
+    color: #525151;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  .contant-item {
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    gap: 6px;
+    color: #4e4e4e;
+    font-size: 1.1em;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .items-title {
+    font-size: 1.126em;
+    color: black;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  /* start  style about page */
+  .about-container:hover {
+    transform: scale(1);
+  }
+  
+  .about-card {
+    /* border: 5px solid #b9b9b9;
+    background-color: #fff; */
+  
+    padding: 2em;
+  }
+  .about-card-header {
+    /* font-size: 1.6em; */
+    text-align: center;
+  }
+  .about-card-header-title {
+    font-size: 1.5em;
+    color: #000;
+  }
+  .about-card-header-des {
+    font-size: 1.3em;
+    color: #3b3b3b;
+  }
+  
+  .about-card-contant {
+    margin-top: 1.5em;
+  }
+  .btn-about {
+    background-color: #0000ac;
+    color: #fff;
+    width: 100%;
+    padding: 0.26em;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s linear;
+  }
+  .btn-about:hover {
+    opacity: 1;
+    transform: scale(1.016);
+  }
+  .btn-about:active {
+    background-color: red;
+  }
+  .about-form {
+    /* border: 3px solid #efefef; */
+    padding: 1em;
+    margin: 2.5em 0.6em 0 0.6em;
+    border-radius: 0.5em;
+    border: 5px solid #b9b9b9;
+    background-color: #fff;
+    height: 362px;
+    transition: all 0.5s linear;
+  }
+  .about-form-item {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 0.3em;
+    margin-bottom: 1em;
+  }
+  .about-form-item-title {
+    font-size: 1.1em;
+    padding-inline-start: 0.8em;
+  }
+  
+  .about-form-item-content {
+    border: 3px solid #ababab;
+    padding: 0.65em;
+    border-radius: 0.38em;
+    transition: all 0.3s linear;
+  }
+  .about-form-item-content:hover {
+    border-color: #362929;
+  }
+  .btn-submit {
+    width: 100%;
+    padding: 0.25em;
+    font-size: 1em;
+    border-radius: 0.4em;
+    background-color: rgb(2, 84, 2);
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .btn-submit:hover {
+    opacity: 0.76;
+    transform: scale(1.016);
+  }
+  .hidden {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  /* end style about page */
+  
+  @media screen and (max-width: 400px) {
+    .header {
+      flex-direction: column;
+      border-radius: 0;
+    }
+    .header-img {
+      order: 0;
+      margin-bottom: 15px;
+    }
+    .header-name {
+      order: 1;
+    }
+    .info {
+      grid-template-columns: auto;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 576px) {
+    .info {
+      grid-template-columns: auto;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .container {
+      max-width: 540px;
+    }
+    .info{
+      grid-template-columns: auto ;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .container {
+      max-width: 720px;
+    }
+    .info{
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {
+    .container {
+      max-width: 960px;
+    }
+    .info{
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  /* تنظیم فاصله خط برای بخش مهارت‌ها و مدارک تحصیلی */
+  .contant-item span {
+    line-height: 1.8;
+    margin-bottom: 0.5em;
+  }
+  
+  /* فاصله بین عناصر contant-item برای خوانایی بهتر */
+  .contant-item {
+    gap: 10px;
+  }
+  
